@@ -1,0 +1,20 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  /* formato em grid */
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:"cabecalho" "conteudo" "rodape" ; /* definindo as areas */
+    grid-template-columns: auto; /* definindo o tamanho das colunas */
+    grid-template-rows: 50px 100vh auto; /* definindo os tamanho das divs */
+}
+
+.cabecalho {
+    grid-area: cabecalho; /* definindo as relações das areas criadas*/
+}
+ 
+.conteudo {
+    grid-area: conteudo; /* definindo as relações das areas criadas*/
+}
+
+.rodape {
+    grid-area: rodape; /* definindo as relações das areas criadas*/
+}
