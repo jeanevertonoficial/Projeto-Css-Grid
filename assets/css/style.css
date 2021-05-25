@@ -16,6 +16,8 @@
  
 .conteudo {
     grid-area: conteudo; /* definindo as relações das areas criadas*/
+    padding: 0 2rem; /* espaçamento do conteudo completo */
+
 }
 
 .rodape {
