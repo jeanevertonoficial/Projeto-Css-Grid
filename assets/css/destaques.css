@@ -26,8 +26,6 @@
 /*padrão normal de implementar o codigo */
 .destaques__principal {  
     background-image: url("../img/fortnite.jpg");
-    grid-column-start: 1; /* definindo as posições que a imagem vai ocupar dentro das grids colunas */ 
-    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
     background-size: cover ; 
@@ -38,26 +36,18 @@
 /*padrão otimizado*/
 .destaques__secundario:nth-child(2) { /* comando que decide os filhos de cada campo */
     background: url("../img/pubg.jpg") center / cover no-repeat;
-    grid-column: 4 / 4;
-    grid-row: 1 / 1;
 }
 
 .destaques__secundario:nth-child(3) { /* comando que decide os filhos de cada campo */
     background: url("../img/slack.png") center / cover no-repeat;
-    grid-column: 4 / 4;
-    grid-row: 2 / 2;
 }
 
 .destaques__secundario:nth-child(4) { /* comando que decide os filhos de cada campo */
     background: url("../img/whatsapp.png") center / cover no-repeat;
-    grid-column: 4 / 4;
-    grid-row: 3 / 3;
 }
 
 .destaques__secundario:nth-child(5) { /* comando que decide os filhos de cada campo */
     background: url("../img/cs-go.jpg") center / cover no-repeat;
-    grid-column: 3 / 3;
-    grid-row: 3 / 3;
 }
 
 .destaques__categorias {
