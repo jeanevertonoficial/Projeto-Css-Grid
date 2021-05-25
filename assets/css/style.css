@@ -8,7 +8,10 @@
 }
 
 .cabecalho {
+    align-items: center; /*alinhando os elementos do menu */
+    display: flex; /* estilo que display */
     grid-area: cabecalho; /* definindo as relações das areas criadas*/
+    padding: 0 2rem;
 }
  
 .conteudo {
