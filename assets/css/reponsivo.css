@@ -1,4 +1,7 @@
 @media screen and (min-width: 0){   /*celulares*/
+    .menu__link {
+    padding: .5rem;
+    }
     .destaques__principal , .destaques__categorias{
         grid-column: 1 /5;
     
@@ -39,9 +42,28 @@
 
 @media screen and (min-width: 768px){ /*tablets*/
     .destaques__principal {
-        grid-column: 1 /4;
+        grid-column: 1 /5;
     }
-    .destaques__secundario:nth-child(2) {
+    .destaques__categorias {
+        grid-column: 1 /5;
+    }
+       
+    .populares__conteudo {
+        flex-direction: row; /* quebra o linha em coluna assim um car fica por baixo do outro */
+    }
+    
+    .populares__card {
+        grid-template-rows: 173px auto; /* melhorando a imagem para tele menores */
+        margin-bottom: 3rem;
+        margin-right: 1rem;
+        width: calc(50% - 1rem);
+    }
+}
+@media screen and (min-width: 992px){ /*telas menores e pc not antigos*/
+       .populares__card {
+        width: calc(33.3% - 1rem);
+    }
+     .destaques__secundario:nth-child(2) {
         display: flex;
         grid-column: 4 / 4;
         grid-row: 1 / 1;
@@ -61,24 +83,11 @@
         grid-column: 3 / 3;
         grid-row: 3 / 3;
     }
+    .destaques__principal {
+        grid-column: 1 /4;
+    }
     .destaques__categorias {
         grid-column: 1 /3;
-    }
-       
-    .populares__conteudo {
-        flex-direction: row; /* quebra o linha em coluna assim um car fica por baixo do outro */
-    }
-    
-    .populares__card {
-        grid-template-rows: 173px auto; /* melhorando a imagem para tele menores */
-        margin-bottom: 3rem;
-        margin-right: 1rem;
-        width: calc(50% - 1rem);
-    }
-}
-@media screen and (min-width: 992px){ /*telas menores e pc not antigos*/
-       .populares__card {
-        width: calc(33.3% - 1rem);
     }
 }
 
